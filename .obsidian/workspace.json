@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A Folder/This is a test.md",
+                "file": "test.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A Folder/This is a test.md",
+                "file": "test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A Folder/This is a test.md",
+                "file": "test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A Folder/This is a test.md"
+                "file": "test.md"
               }
             }
           }
@@ -157,8 +157,9 @@
   },
   "active": "41f798c9602f53d6",
   "lastOpenFiles": [
+    "A Folder/This is a test.md",
+    "A Folder/This is a test!.md",
     "test.md",
-    "A Folder",
-    "A Folder/This is a test.md"
+    "A Folder"
   ]
 }
