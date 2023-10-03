@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Japanese.md",
+                "file": "atomic habits.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Japanese.md",
+                "file": "atomic habits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Japanese.md",
+                "file": "atomic habits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Japanese.md"
+                "file": "atomic habits.md"
               }
             }
           },
@@ -155,7 +155,7 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "64d38aa486b98c27",
+  "active": "1bcbbff46e5f07e1",
   "lastOpenFiles": [
     "Japanese.md",
     "atomic habits.md",
