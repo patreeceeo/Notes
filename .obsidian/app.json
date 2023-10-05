@@ -1,3 +1,5 @@
 {
-  "vimMode": false
+  "vimMode": true,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": false
 }

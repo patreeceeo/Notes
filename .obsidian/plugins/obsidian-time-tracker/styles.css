@@ -1,0 +1,105 @@
+
+.timer-control-container { 
+    color: var(--text-normal);
+    background-color: var(--background-primary-alt);
+}
+
+.timer-tracker-compatible.loading + .timer-control-container {
+    display: none;
+}
+
+.timer-tracker-compatible.in-error + .timer-control-container {
+    display: none;
+}
+
+.timer-control { 
+    display: inline-block;
+    width: 100%;
+    padding: 0 5px;
+    text-align: right;
+}
+
+.timer-control-container.has-timer-view {
+    width: 15em;
+    border-radius: 5px;
+}
+
+.timer-control-container.has-timer-view .timer-view {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.timer-control-container.has-timer-view .timer-control {
+    text-align: center;
+}
+
+.timer-control button {
+    font-size: 1em;
+    padding: 0 0.5em;
+    margin: 0;
+    min-width: 2em;
+}
+
+.time-tracker-table {
+    padding: 10px;
+}
+
+.time-tracker-table-id {
+    text-align: left;
+    max-width: 9em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.time-tracker-table-time {
+    text-align: center;
+}
+
+.time-tracker-table-commands {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.time-tracker-table-no-timers {
+    text-align: center;
+}
+
+.time-tracker-table-commands button {
+    margin: 0 2px;
+    padding: 0.5em;
+}
+
+.timer-view {
+    min-width: 5em;
+}
+
+.timer-view-status-bar span{
+    margin: 0 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+form.time-tracker-edit {
+    text-align: center;
+}
+
+form.time-tracker-edit span {
+    margin: 0 5px;
+    font-size: 1.5em;
+}
+
+.time-tracker-modal-commands {
+    text-align: right;
+    padding-top: 2em;
+}
+
+.time-tracker-modal-title {
+    max-width: 20em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

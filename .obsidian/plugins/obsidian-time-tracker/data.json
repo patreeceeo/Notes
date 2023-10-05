@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "approximation": 0,
+    "pomodoroDuration": 300,
+    "storageFile": "TimeTracker",
+    "enableStatusBar": true
+  },
+  "timers": []
+}
