@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "atomic habits.md",
+                "file": "Japanese.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "atomic habits.md",
+            "file": "Japanese.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "atomic habits.md",
+            "file": "Japanese.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -123,7 +123,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "atomic habits.md"
+            "file": "Japanese.md"
           }
         }
       },
@@ -149,9 +149,32 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "72870f7a2bfe5581",
+  "active": "18742ac6a646deac",
   "lastOpenFiles": [
+    "Projects/Homepage.md",
     "atomic habits.md",
+    "Wordpress.md",
+    "Nix.md",
+    "Projects",
+    "Apache.md",
+    "Linux.md",
+    "Devbox.md",
+    "Projects/Learn Japanese.md",
+    "MariaDB (and MySQL).md",
+    "Ideas.md",
+    "/Wordpress.md",
+    "/Projects/Learn Japanese.md",
+    "/Projects/Homepage.md",
+    "/Nix.md",
+    "/MariaDB (and MySQL).md",
+    "/Linux.md",
+    "/Japanese.md",
+    "/Ideas.md",
+    "/Devbox.md",
+    "/Apache.md",
+    "/Projects",
+    "/atomic habits.md",
+    "Japanese.md",
     "A Folder/This is a test!.md",
     "A Folder/This is a test!!!.md",
     "/A Folder/This is a test!!!.md",
