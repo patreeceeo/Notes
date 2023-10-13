@@ -13,38 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Homepage.md",
+                "file": "Projects/Freelance.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ced6cb8532e9eee1",
+            "id": "eee930486760858d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Homepage.md",
+                "file": "Projects/Freelance.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "24bd68d95c5f3aad",
+            "id": "f4348511506a3d9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomic Habits.md",
+                "file": "Game Dev/general.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "abec106fa9b7b461",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Freelance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6f92bedd0a62f332",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Freelance.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atomic Habits.md",
+                "file": "Projects/Freelance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atomic Habits.md",
+                "file": "Projects/Freelance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atomic Habits.md"
+                "file": "Projects/Freelance.md"
               }
             }
           },
@@ -180,20 +204,25 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "24bd68d95c5f3aad",
+  "active": "6f92bedd0a62f332",
   "lastOpenFiles": [
+    "Game Dev/Phaser.md",
+    "Ideas.md",
+    "Projects/Freelance.md",
+    "Projects/Learn Japanese.md",
     "Japanese.md",
+    "Projects/meditate.md",
+    "Parcel.md",
+    "Game Dev/general.md",
+    "Game Dev",
     "Wordpress.md",
+    "TypeScript.md",
+    "Atomic Habits.md",
     "atomic habits.md",
-    "Untitled.md",
-    "Projects/Homepage.md",
     "Linux.md",
     "Apache.md",
     "MariaDB (and MySQL).md",
-    "Atomic Habits.md",
-    "Projects/Learn Japanese.md",
     "Devbox.md",
-    "Ideas.md",
     "Nix.md",
     "TimeTracker.md",
     "Projects",

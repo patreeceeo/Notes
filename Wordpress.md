@@ -21,3 +21,20 @@ Installing
 9. Edit wp-config.php
 	1. Set database name, database password, database user, etc
 10. go to /wp-admin/install.php
+
+# Admin Fu
+
+You can toggle whether the homepage displays the latest posts or a static page with Settings > Reading > Your homepage
+# Code snippets
+
+Add comments to page
+
+```wordpress/html
+<!-- wp:template-part {"slug":"comments","theme":"twentytwentythree","tagName":"section"} /-->
+```
+
+Add post content
+
+```wordpress/html
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+```

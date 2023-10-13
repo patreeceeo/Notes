@@ -1,0 +1,7 @@
+# Stuff to try
+- Phaser
+- https://colyseus.io/learn/
+- https://haxe.org/use-cases/games/
+- https://www.openfl.org/ (with Haxe)
+- https://armory3d.org/ (with Haxe)
+- raylib

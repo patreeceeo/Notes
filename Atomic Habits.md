@@ -20,3 +20,7 @@ don’t focus on the goal like a carrot on a stick, instead focus on (and find j
 # Chapter 2
 
 Decide what kind of person you want to become, then let that determine your processes (systems of atomic habits?). Your processes are what will determine your outcome. Do not aim for a specific outcome, instead, focus on acting like the person you want to be.
+
+# Chapter 3
+
+If it's visible, attractive, easy, satisfying, it's likely to become a habit. Conversely, if it's invisible, ugly, difficult, unsatisfying it's unlikely to become (or remain) a habit.
