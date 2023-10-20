@@ -109,5 +109,14 @@ text.setVisible(false);
 ```
 
 
+### Hot Module Replacement
+
+NOTE: it's critical to destroy the old `Phaser.Game` instance in the dispose callback for HMR to work correctly.
+
+```javascript
+game.destroy(true);
+```
+
+
 # References
 - https://stackabuse.com/introduction-to-phaser-3-building-breakout/

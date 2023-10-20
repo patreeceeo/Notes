@@ -66,9 +66,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "93113431fb2f512b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
+          },
+          {
+            "id": "65994341c8e45118",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Freelance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,24 +226,26 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "6f92bedd0a62f332",
+  "active": "eee930486760858d",
   "lastOpenFiles": [
-    "Game Dev/Phaser.md",
-    "Ideas.md",
-    "Projects/Freelance.md",
+    "MariaDB (and MySQL).md",
+    "Atomic Habits.md",
+    "Firefox.md",
+    "Linux.md",
     "Projects/Learn Japanese.md",
     "Japanese.md",
-    "Projects/meditate.md",
+    "Projects/Freelance.md",
+    "Wordpress.md",
+    "Apache.md",
+    "KDE Plasma.md",
+    "Game Dev/Phaser.md",
     "Parcel.md",
+    "Ideas.md",
+    "Projects/meditate.md",
     "Game Dev/general.md",
     "Game Dev",
-    "Wordpress.md",
     "TypeScript.md",
-    "Atomic Habits.md",
     "atomic habits.md",
-    "Linux.md",
-    "Apache.md",
-    "MariaDB (and MySQL).md",
     "Devbox.md",
     "Nix.md",
     "TimeTracker.md",

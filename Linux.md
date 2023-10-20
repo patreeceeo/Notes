@@ -53,3 +53,26 @@ Copy a directory
 
 ```shell
 scp -r dir user@host:/path/name
+```
+
+# Systemd
+
+Can be used (with `systemctl` command) to create and manage programs that run automatically on specific triggers, like when the system boots or with a timer.
+
+Systemd service definitions can be found at `/etc/systemd/system/<service-name>.service`
+
+Example: I'm using this to automatically configure static IP addresses
+
+See the output of a service since a given time:
+```shell
+journalctl -S today -u web-monitor.service
+```
+
+
+# IP
+
+You can find the default network interface with 
+
+```shell
+ip route list default
+```
