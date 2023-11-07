@@ -38,3 +38,20 @@ Add post content
 ```wordpress/html
 <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 ```
+
+# Permalinks without index.php
+
+Make sure /etc/apache2/sites-available/000-default.conf has the following:
+```xml
+<VirtualHost *:80>
+    <Directory /var/www/html>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
+
+then `systemctl restart apache2`
+
+then edit the permalink settings in wp-admin

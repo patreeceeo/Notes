@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Freelance.md",
+                "file": "Projects/Learn Japanese.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b350a9e9bc60c71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Japanese/Japanese.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Freelance.md",
+                "file": "Japanese/Japanese.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,16 +80,6 @@
             }
           },
           {
-            "id": "93113431fb2f512b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
-          },
-          {
             "id": "65994341c8e45118",
             "type": "leaf",
             "state": {
@@ -88,9 +90,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "025e9352a60210dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -156,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Freelance.md",
+                "file": "Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Freelance.md",
+                "file": "Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Freelance.md"
+                "file": "Linux.md"
               }
             }
           },
@@ -213,7 +227,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,23 +240,27 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "eee930486760858d",
+  "active": "025e9352a60210dd",
   "lastOpenFiles": [
-    "MariaDB (and MySQL).md",
+    "Projects/Freelance.md",
+    "Housemate Search.md",
+    "Japanese/Japanese.md",
+    "Wordpress.md",
     "Atomic Habits.md",
+    "Projects/Learn Japanese.md",
+    "Git.md",
+    "Japanese/Hiragana Stroke Order.jpg",
+    "Japanese",
+    "Game Dev/Phaser.md",
+    "Game Dev/general.md",
+    "MariaDB (and MySQL).md",
     "Firefox.md",
     "Linux.md",
-    "Projects/Learn Japanese.md",
-    "Japanese.md",
-    "Projects/Freelance.md",
-    "Wordpress.md",
     "Apache.md",
     "KDE Plasma.md",
-    "Game Dev/Phaser.md",
     "Parcel.md",
     "Ideas.md",
     "Projects/meditate.md",
-    "Game Dev/general.md",
     "Game Dev",
     "TypeScript.md",
     "atomic habits.md",

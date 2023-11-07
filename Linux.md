@@ -76,3 +76,11 @@ You can find the default network interface with
 ```shell
 ip route list default
 ```
+
+
+# Hard Drive
+figure out what's using all the space:
+
+```shell
+sudo du -x -t1G -d1 -h /
+```

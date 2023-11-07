@@ -117,6 +117,8 @@ NOTE: it's critical to destroy the old `Phaser.Game` instance in the dispose cal
 game.destroy(true);
 ```
 
+# Tilemap
 
+`this.make.tilemap(...)` => `ParseToTilemap(...)` => `new Tilemap(...)` => 
 # References
 - https://stackabuse.com/introduction-to-phaser-3-building-breakout/
