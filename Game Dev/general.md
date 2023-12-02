@@ -5,3 +5,7 @@
 - https://www.openfl.org/ (with Haxe)
 - https://armory3d.org/ (with Haxe)
 - raylib
+- defold
+- godot
+- https://www.puzzlescript.net/
+- https://fable.io/

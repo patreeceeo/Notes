@@ -5,3 +5,5 @@ A multiplayer sokoban
 An online business that sells art directly from local artists (artists sets price, no markup) and can deliver purchases locally for a fee.
 
 Collusion detection agency
+
+An app that can stream audio from soundcloud, internet radio, etc and shows you what your friends are listening to.

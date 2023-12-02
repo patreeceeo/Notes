@@ -8,103 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "af0b5e139ad9d6f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Freelance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eee930486760858d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Learn Japanese.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b350a9e9bc60c71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Japanese/Japanese.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f4348511506a3d9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Game Dev/general.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abec106fa9b7b461",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Japanese/Japanese.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f92bedd0a62f332",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Freelance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "65994341c8e45118",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Freelance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "025e9352a60210dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux.md",
+                "file": "Projects/Freelance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6371563882f4791b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Zomboban.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "18f8aa62fb8fbc6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -170,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux.md"
+                "file": "Git.md"
               }
             }
           },
@@ -240,26 +180,28 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "025e9352a60210dd",
+  "active": "18f8aa62fb8fbc6d",
   "lastOpenFiles": [
+    "Projects/Zomboban.md",
+    "Wishlist.md",
+    "Ideas.md",
     "Projects/Freelance.md",
     "Housemate Search.md",
-    "Japanese/Japanese.md",
-    "Wordpress.md",
+    "Game Dev/general.md",
+    "Linux.md",
     "Atomic Habits.md",
     "Projects/Learn Japanese.md",
+    "Japanese/Japanese.md",
+    "Wordpress.md",
     "Git.md",
     "Japanese/Hiragana Stroke Order.jpg",
     "Japanese",
     "Game Dev/Phaser.md",
-    "Game Dev/general.md",
     "MariaDB (and MySQL).md",
     "Firefox.md",
-    "Linux.md",
     "Apache.md",
     "KDE Plasma.md",
     "Parcel.md",
-    "Ideas.md",
     "Projects/meditate.md",
     "Game Dev",
     "TypeScript.md",
@@ -271,8 +213,6 @@
     "test.md",
     "A Folder/This is a test!!!.md",
     "A Folder",
-    "Flashcards.md",
-    "Japanese",
-    "A Folder/This is a test.md"
+    "Japanese"
   ]
 }

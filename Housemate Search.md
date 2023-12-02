@@ -13,8 +13,8 @@ Posts:
 	* Zine Club Discord
 	* Noisebridge Discord
 * [Physical Ad](https://docs.google.com/document/d/1sXZIXQ2RvkPbB-kJc8WUwUXyGu-6kOeRfK2PqoqEEDc/edit)
-	* On our garage door
 	* At coffee to the people
+	* At syzygy
 
 [CL help forum post](https://forums.craigslist.org/?ID=328575693)
 

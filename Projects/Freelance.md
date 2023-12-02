@@ -16,14 +16,25 @@
 		- immersive web: about what's happening here, in a Web-based virtual world (WebSockets, WebRTC, WebTransport, QUIC etc)	  
 	* shoe-string server monitoring
 	* walk through coding a sokoban / top-down square tile adventure game.
+	* creating a JS test framework using node:test, node:assert and glob
+	* using opaque types to add units to numbers
+	* sokoban and computer science
+	* the ECS I've created for Zomboban
+	* the task-oriented note taking time tracking thing I've been doing lately
+	* OOP is an anti-pattern magnet
+	* anti-patterns
+	* X lesser known design patterns
 - make a video on Grape
 * write new about page
-* play "Into the Breach" for Zomboban game design research
 
 Week of 11/06/2023
 ```simple-time-tracker
-{"entries":[{"name":"remove index.php from WP URLs","startTime":"2023-11-06T18:45:46.000Z","endTime":"2023-11-06T19:25:46.000Z","subEntries":null},{"name":"add contact form to innerlogic.co","startTime":"1970-01-01T00:00:00.000Z","endTime":null,"subEntries":[{"name":"Part 1","startTime":"2023-11-06T19:40:54.761Z","endTime":"2023-11-06T19:45:48.319Z","subEntries":null},{"name":"Part 2","startTime":"2023-11-06T20:19:40.119Z","endTime":"2023-11-06T20:59:25.718Z","subEntries":null}]},{"name":"zomboban","startTime":null,"endTime":null,"subEntries":[{"name":"Part 1","startTime":"2023-11-06T23:47:07.584Z","endTime":"2023-11-07T02:21:15.253Z","subEntries":null},{"name":"Part 2","startTime":"2023-11-07T04:00:50.767Z","endTime":null,"subEntries":null}]},{"name":"play into the breach","startTime":"2023-11-07T03:34:45.749Z","endTime":"2023-11-07T04:00:42.793Z","subEntries":null}]}
+{"entries":[{"name":"remove index.php from WP URLs","startTime":"2023-11-06T18:45:46.000Z","endTime":"2023-11-06T19:25:46.000Z","subEntries":null},{"name":"add contact form to innerlogic.co","startTime":"1970-01-01T00:00:00.000Z","endTime":null,"subEntries":[{"name":"Part 1","startTime":"2023-11-06T19:40:54.761Z","endTime":"2023-11-06T19:45:48.319Z","subEntries":null},{"name":"Part 2","startTime":"2023-11-06T20:19:40.119Z","endTime":"2023-11-06T20:59:25.718Z","subEntries":null}]},{"name":"zomboban","startTime":"1970-01-01T00:00:00.000Z","endTime":null,"subEntries":[{"name":"Part 1","startTime":"2023-11-06T23:47:07.584Z","endTime":"2023-11-07T02:21:15.253Z","subEntries":null},{"name":"Part 2","startTime":"2023-11-07T04:00:50.000Z","endTime":"2023-11-07T04:20:56.000Z","subEntries":null},{"name":"Part 3","startTime":"2023-11-07T19:40:27.046Z","endTime":"2023-11-07T20:28:25.987Z","subEntries":null},{"name":"Part 4","startTime":"2023-11-07T23:07:52.811Z","endTime":"2023-11-08T03:07:53.894Z","subEntries":null},{"name":"Part 5","startTime":"2023-11-08T18:19:43.678Z","endTime":"2023-11-08T19:42:43.147Z","subEntries":null},{"name":"Part 6","startTime":"2023-11-08T20:55:06.000Z","endTime":"2023-11-09T01:20:39.000Z","subEntries":null}]},{"name":"play into the breach","startTime":"2023-11-07T03:34:45.749Z","endTime":"2023-11-07T04:00:42.793Z","subEntries":null},{"name":"write article","startTime":"1970-01-01T00:00:00.000Z","endTime":null,"subEntries":[{"name":"Part 1","startTime":"2023-11-09T19:20:21.000Z","endTime":"2023-11-09T19:46:21.000Z","subEntries":null},{"name":"Part 2","startTime":"2023-11-09T19:46:55.000Z","endTime":"2023-11-09T21:00:43.000Z","subEntries":null},{"name":"Part 3","startTime":"2023-11-09T23:08:15.000Z","endTime":"2023-11-09T23:23:27.000Z","subEntries":null}]}]}
 ```
+fix word wrap on home page:
+* estimate: 20 minutes
+* starting at 11/9 4:13
+* actual time spent: 20 minutes!
 
 
 

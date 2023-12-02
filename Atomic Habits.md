@@ -12,7 +12,7 @@ it doesn’t matter to an ice cube how much temperature changes if it’s still 
 <!--SR:!2023-12-10,52,310-->
 
 what is an atomic habit?:: a building block of a system 
-<!--SR:!2023-11-12,27,270-->
+<!--SR:!2024-02-22,102,290-->
 
 don’t focus on the goal like a carrot on a stick, instead focus on (and find joy in) ________ :: systems!
 <!--SR:!2023-11-27,41,290-->
@@ -82,3 +82,26 @@ Track you habits: Use a salient, easy-to-use system for your most important/stub
 # how an accountability partner can change everything
 
 Provide social pressure to follow through on your goals.
+
+# The truth about talent (when genes matter and when they don't)
+
+Pick the game that you're good at, the one you enjoy or that is less painful for you than others. If such a game doesn't exist, create it. Combine two things you're above average at. Explore and exploit: There's a balance to be struck. Explore more when you're loosing or have time to spare, exploit more when you've found a winning formula, or, if running out of time, at least something that works. 
+
+# the Goldilocks rule
+
+Like we've already covered, being consistent with habits is crucial. An important consideration to help with consistency is to make sure that the habits you're trying to cultivate are neither too hard or too easy. The ability to stick with habits when they get boring is what separates the excellent from the merely good.
+
+# the downside of creating good habits
+
+Habits allow us to go on autopilot, which means we aren't aware of how well we're actually performing, or whether we could improve. To counteract this, develop meta habits of reflection and review. Be flexible, try new things, play explore/exploit. Perhaps keep a decision journal, adopt a system of quantifying and tracking performance. Keep you're identity from being tied to external things, keep it about your own qualities.
+
+## little lessons from the four laws
+
+Your brain constructs emotions to describe a situation.
+Happiness is nothing more the absence of desire.
+Suffering is gap between us and what we desire.
+"Happiness cannot be pursued, it must ensue." -- Victor Frankl
+Peace occurs when you don't turn your observations into problems
+"He who has a why to live can bear almost any how" -- Nietszche
+To achieve anything, you must make desire your tool.
+Desire (and emotions generally) always come before any action.
