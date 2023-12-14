@@ -1,4 +1,34 @@
-# sprint 10/9/23
+# sprint 12/13/23
+From now on I'll actually start a new sprint each week. Had the playtest at the MADE this past weekend. Got a lot of good feedback and found a lot of bugs.
+* take a new screencap of the game in its current state, for posterity.
+	* estimate: 15 minutes
+* bug: it's possible to place walls on top of player in the editor
+* bug: something weird happens when zombies collide with unzombies
+* bug: somehow zombies can end up on top of crates
+* ~~bug: throwing a potion doesn't take a turn~~
+* improvement: redesign the player character
+	* the guy in a suit just isn't the most inspiring hero. I'm leaning towards having it be a girl who's father works in the facility. She's looking for her father who is probably one of the zombies.
+* improvement: try having zombies only stop you when they overlap your player.
+	* depends on: redesigning the player character
+	* motivation: it might make it easier to design puzzles
+	* design: use a feature flag to decide to apply this rule. Create an large scale illustration (or even an animation) of the player fighting the zombie to show in the the overlay. 
+* ~~Improvement: editor C keybind
+	* ~~motivation: B is more intuitive since B can stand for Box or Block. Box is a more common, general word for what the sprite looks like, and Block is a common word used in this genre of game. People at the play test didn't immediately pick up that C stands for Crate. Also Crate sorta sounds like Create, which could be confusing spoken aloud.
+	* ~~estimate: 2 minutes 
+* ~~improvement: editor W keybind
+	* ~~motivation: since changing the editor movement keys to WASD, now the save level keybind (Shift+W) causes the cursor to move up.
+	* ~~design: just detect if the shift key is being pressed and don't move the cursor if it is.
+	* ~~estimate: 5 minutes
+* improvement: simplify undo apparatus (break into smaller chunks)
+	* design/motivation: Every entity that can have its state undone has a shadow entity that, when an undo is requested, receives the state for that entity from the top of the undo stack. There are then re-entrant delta-time functions that transition the value of each component on the original entity to the value of said component on the shadow entity. This way we don't have to use velocity or the physics system to undo position, and other components can be added to the undo apparatus in a standardized way. Add an undo system that will query for undo components. (This doesn't actually have to be a component since only the undo system will access this info.) The undo components point to the shadow entity. The system then simply applies the transition function for each component, if necessary. All of the management of the undo stack can also be moved to this system. It can simply expose an API that the game system can use in keybinds. That API:
+		* requestUndo(): try to pop state as long as the internal stack is > 0 depth and we're not still in the process of handling an earlier request. Apply the state using the shadow entity and transition functions described above.
+		* pushUndoState(): push the state of all undo-able entities on the internal stack.
+		* enableUndo(id: number): adds the undo component and creates the shadow entity for entity given by `id`.
+	* estimate: 5 hours to get to where everything in the game can be undone.
+* improvement: animate velocity (break into smaller chunks)
+	* motivation: will look better and make it easier to tell what's going on, and smooth camera movements might be more comfortable for players.
+	* design: Since there's no friction (to allow for projectiles) yet all movement is quantized, there has to be a way of limiting movement due to velocity. The physics system maintains an internal record per-entity record of A.) the per-turn movement limit, in tiles (neglecting difference between X and Y) and B.) how much it's moved in the current turn. With this in place, it should be possible to move entities smoothly using their velocity and the delta time. Will need to make sure to update the tile-based spatial partition only once an entity is fully inside a tile, otherwise, the physics system in its current form will think the entity is colliding with itself. Maybe instead I just make the physics system smarter?
+# sprint 11/9/23
 * basic, stupid level editor persistence
 	* design: create a system that converts all component data into JSON strings and saves them in browser's storage. When booting up, load all components' state.
 	* estimate: 45 minutes
@@ -149,7 +179,62 @@
   * Add ability to load level data in the SOK format
   * Save and load level data from a file, rather than local storage.
 	  * motivation: local storage can be cleared accidentally. And sometimes I have to clear it to clear the level for various development purposes. If it were saved in a file I could get it back easily. Also will want to experiment with many variations of level designs.
-	  * design: Dynamically load level from a particular endpoint over HTTP. The endpoint simply sends over the contents of the file. For now the format can be the same JSON string that's stored in local storage. 
+	  * design: Dynamically load level from a particular endpoint over HTTP. The endpoint simply sends over the contents of the file. For now the format can be the same JSON string that's stored in local storage.
+  * Implement separate puzzles using doorways
+	  * design: The game is a collection of (self-contained?) puzzles that fit within a single screen. The camera moves with the player, but only by 1 whole screen at a time, triggered by the player reaching the edge of the screen. Each level has at least one exit that the player can use to progress to a new puzzle, doors simply allow the player to pass through. Sometimes it's possible to see portions of adjacent puzzles?
+	  * subtask: edit and render doors
+		  * design: Doors need to be face in any of the 4 cardinal directions. Currently there's no concept of orientation. Need to add an orientation component and be able to update it via the editor. After placing an orient-able object in the editor, it automatically enters "orient" mode in which the direction keys can be used to set the orientation of the object under the cursor. You can also press "o" to enter orient mode from normal mode. The orient component is actually a virtual component that changes the LookLike component: Every orient-able object's LookLike value belongs to a mapping from each possible orientation to the corresponding LookLike value.
+		  * time: about 4.5 hours
+	  * subtask: allow player and pushables to move through doors
+		  * design: doors can be rendered on the background layer to simplify rendering. The physics system should exclude doors from collisions. Doors don't need any behavior (yet) so no ActLike component or enum value for them.
+		  * estimate: 30min
+		  * start: 3:36
+		  * finish: 3:41
+		  * time: 5 minutes
+		  * design: the look of the doors will need to change
+	  * subtask: pressing "G" fills the current screen with walls
+		  * estimate: 5 minutes
+		  * start: 3:45
+		  * finish: 4:00
+		  * time: 15 minutes
+	  * subtask: automatically add a floor tile wherever there isn't a wall
+		  * motivation: for now, there's only going to be 1 kind of floor tile so they should be created automatically. However, we need to know when and where they should be placed. This rule is simple and ensures that floor tiles are placed only where needed
+		  * design: In edit mode, on every frame, iterate through tiles on the current screen, add floor tiles where needed, remove them where they aren't.
+		  * estimate: 15 minutes
+		  * start: 4:01
+		  * finish: 4:11
+		  * time: 10
+	  * subtask: implement camera that moves one screen over when player reaches the edge of the screen
+		  * design: create a camera entity that has a camera tag and a position. The render system uses its position to know what entities to render. If an entity is within a half screen width / height, then render it. Initially the camera is positioned at width / 2, height / 2. When the player moves off screen, add/subtract 1 width or height to the camera's position. Also, sprites should be positioned relative to the camera, so subtract the camera's position and add 1/2 screen width or height.
+		  * estimate: 1hr
+		  * time: 2.5hr?
+  * weapons of dezombification
+	  * motivation: I want the player to be able to use tools like bombs and guns (that de-zombie-fy the zombies). As opposed to having an inventory system where the player collects and equips themselves with items, maybe these items can just be used wherever they've been placed in the map, and you use them by bumping into them? When used successfully, the targeted zombie becomes a regular human who waits helplessly until the player collects them, adding to their score. How would these objects look? The bomb is pretty obvious. The gun would be on a turret and would rotate and fire in whatever direction the player bumps it? Not being able to collect these items robs the player of the chance to choose where to use them. Maybe at least the bomb should be collectible, in which case I'll need to display how many bombs the player has in the HUD. I think, for now, there should just be ammo that you can collect, you have the gun already. Or maybe you have infinite ammo? Infinite ammo is simpler to implement, so maybe should just go with that for now, and can implement limited ammo + ammo packs later if necessary. 
+	  * design: When the user presses the fire key (shift perhaps?) and a direction key, add the projectile potion entity and give it the corresponding velocity. When it collides with something, remove it. If the thing it collides with is a zombie, turn the zombie into a human. The undo apparatus will need to register where projectiles are created and where they collide along with their velocity.
+  * should zombies continue moving in whatever direction they were moving when they last saw the player?
+	  * motivation: this would make it possible for zombies to cancel each other out when they collide. Could also be useful for having zombies push blocks for you. In the second case, it would be annoying to have to stay in the zombie's line of sight. This might also make zombies a harder target if we're trying to hit them with something.
+  * should zombies be able to push blocks?
+	  * motivation: Seems like it would make the puzzles more interesting and dynamic.
+	  * design: When the physics system detects a collision between a zombie and a pushable, call the existing attemptPush function.
+	  * estimate: 30 minutes
+	  * start: 3:27
+	  * finish: 4:02
+	  * time: 35 minutes
+  * should zombies cancel each other out when they collide?
+	  * motivation: Seems like an interesting way to solve the problem of how to defeat them. Maybe some puzzles require eliminating some zombies. This conflicts with the idea of de-zombie-fying the zombies. 
+  * should zombies be able to move out of turn? No.
+  * animate the zombies!
+	  * motivation: because animation is fun
+	  * design: make every sprite an instance of pixi.AnimatedSprite iff it has a SpriteSheet component. Load the animation data via a sprite sheet JSON file exported from Aseprite.
+	  * estimate: 1.5 hours
+	  * start: 4:45
+	  * finish: 6:30?
+	  * time: 1.75 hours?
+   * player should be frozen with only the option to undo when they're adjacent to a zombie. It should be a "big moment"
+	   * motivation: even though the zombies don't kill you, there needs to be some reason to avoid them, or else they're all bark and no bite, and not really zombies IMO.
+	   * design: Detecting when the player is adjacent to a zombie is easy enough, simply ignore any input except undo in that case. Also fade out all other sprites and show text explaining the situation.
+	   * estimate: 1hr
+	
 
 ## backlog
 tech ideas:
