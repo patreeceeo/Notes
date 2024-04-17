@@ -323,6 +323,32 @@ tags:
 日本で何が一番好き(ですか)？::(私は)＿＿が本当に好き(です)
 <!--SR:!2024-01-13,62,320-->
 
+## Pokemon 001
+そう - Yes
+俺[おれ] - I
+この - This
+少年[しょうねん] - boy
+十[じゅう] - ten
+Xさい[歳] - X years old
+住む[すむ] - to live, reside
+なると - then
+そうとろ - it's about to start
+取扱[とりあつかい] - handling
+街ろ - town
+X一頭もらい[いっとうもらい] - get one X
+目指して[みざして] - to aim at (for, to do, to become)
+旅[たび] - journey
+出る[でる] - to set out (on a journey)
+最高[さいこう] - the best
+そうても、それは俺だ！- Even so, that will be me!
+全[ぜん] - All
+世界[せかい] - World
+全世界 - the whole world
+全世界ポケモンに - pokemon all over the world
+いつまで - how long? til when?
+起[お]きてる - stay awake
+大人[Otona] - Adult(s)
+
 
 
 # References

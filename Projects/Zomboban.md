@@ -1,17 +1,116 @@
+You just started a new job as a _sokoban_ (warehouse worker) Each day at the job is a new puzzle, and your reward is some BS corporate "we're one big happy family" theater, and the money you need to survive. After your first week, they assemble the new recruits and offer all of you very special helmets. "These helmets let us put our thoughts directly into your head. Neat, eh?" your boss explains. Everyone takes the helmet, but when they come to you, you refuse and then the real game begins. You have to find your way out of the building while dodging the people who want to helmet you. You come back, though, because you need the money and every other job out there has the helmets, too. 
+
+~~A new name? Cheetle World
+Story: You work in the offices of Apple-Motorola-Toyota-Sony-Ericsson of America, Inc. You're a diligent worker. Well, as diligent as anyone can expect, because let's face it: It's a bullshit job.
+
+~~Lately, they've been having these seminars and encouraging all employees to attend. Bad vibes! You've managed to steer clear so far, but the people who have been going have been acting weirder than usual, and today, they're actively trying to corner you, for who knows what. But the looks in those eyes says it ain't to chit chat. They're really making it hard for you to do even the bare minimum. So, are you going to get to the bottom of this? Hell no. Let's just get out of here, get to the gig tonight (you're the front-woman of an unsigned psychedelic cow-punk band), and find a new job tomorrow. But if you're going to escape, you're going to need 🅒🅗🅔🅔🅣🅛🅔 🅜🅞🅥🅔🅢.
+
+Story: You've "quiet quit" (a long time ago) and you spend more mental energy trying to figure out how to avoid work than it would require to actually do the work. But that's no fun, is it? Plot out your groovy escapades in this handy simulator.
+Story: You're a gig worker. Hey, it's a job, right? Speaking of which, something's been up lately. The fellow office dwellers have been acting more creepy and corporate than usual. If you're going to get through these gigs, you're going to need some CHEEDLE MOVES. Everyone seems to be sizing you up. The Steve's have literally been out to get you, but he's never been too nimble on those roller skates. The Brittany's have been stomping about, but she's easily distracted. The Mungers are omnipresent, but these days they're impressed with anything shinny. Also, it's totally okay to throw stuff, because safety 3rd! 
+~~Story: You return from your unauthorized vacation, half-expecting to be fired, to find that your office mates are behaving strangely. Well, more strangely than usual... Is this related to the "human resource enhancement project" you see mentioned near the top of your work e-mail? ~~
+
+It's got tile-based puzzling reminiscent of Chip's Challenge, with corporate satire a la Stanley Parable, with a psychedelic/underground comix visual aesthetic.
+
+It's as if you're a secret agent up to some corporate espionage, but in reality you're just trying to live your best life under the boot of capitalism.
+
+puzzles as mind-numbing as a corporate job, but a lot more fun!
+
+What if boxes can be stacked on top of each other, and stacks of boxes cannot be moved?
+
+Main character: Cheetle (nickname)
+
+CHEETLE MOVES:
+* WASD to move
+* Shift+WASD to use next inventory item
+
+Inventory items (in stack)
+* paper airplane that you throw to create a distraction
+* pogo stick that you use to jump over a box (happens automatically if you have a 1 tile running start and there isn't anything on the other side of the box
+* climbing shoes allow you to climb onto boxes (even stacked boxes)
+* banana peel that you drop in whatever direction you're facing and when anything walks on it, it will slide until it hits something
+* mop can be used to make floors slick.
+* keys - throw them at doors of the corresponding color to open them
+* fork lift - can be used to stack boxes on top of each other and move stacks of boxes
+
+Non-stack items
+coffee - maybe you start with a limited number of moves and you have to pick up coffee to add more moves?
+
+Kinds of tiles:
+- Boxes - can be pushed around if there's nothing on the other side of them
+- Walls - just block movement
+- Thin walls - allow you to enter their tile but block entering from one particular direction (N, S, E, or W)
+- Buttons - toggle walls of the corresponding color when there's something on them
+- Freshly mopped floors - force you to continue to move in whatever direction you were moving
+- Water tiles - Block your movement. You can push boxes into them to cross.
+- Conveyer belts - force you to move in whatever direction they're moving
+- Bro - Starts walking towards you whenever you have either the same X or Y position, keeps walking in that direction until you have the same X or Y position again or run into something. Forces rewind when lands on player tile. Can be trapped inside boxes.
+- Manager A - Paces in one direction until he reaches a wall, then turns 90 degrees until he's unblocked. Will start moving towards anything that's moving and has the same X or Y position. Forces rewind when lands on player tile. Can be trapped inside boxes.
+- Intern - Paces in one direction until they reach a wall, then turns 180 degrees. Forces rewind when lands on player tile. Can be trapped inside boxes.
+- Manager B - Same as Manager A but turns -90 degrees.
+- Executive - Walks along the edges of the walkable area. Starts moving in your direction when you enter the same X or Y position. Keeps moving in that direction. Forces rewind when lands on player tile. Can be trapped inside boxes.
+- Regional manager - rides a motorcycle, looks like Elvis, also in a rock band, can move multiple tiles at once but telegrams his moves (motorcycle moves there first, his arms stretch out, then his body moves there)
+- light switches - turn everything black, you can't see anything and enemies can't see you. You have to remember how to navigate the space and avoid enemies.
+- ??? - Take you to another level.
+# sprint 1/1/24
+
+* ~~box on enemy should eliminate it
+	* motivation: It's inevitable that a box can end up on the same square as a moving entity. I like making it a loose condition when that happens to the player, so it would only make sense that it's a way to defeat enemies.
+	* estimate: 35min
+	* start: 3:05
+	* changed my mind: I'll try letting enemies hide inside boxes and jump out at the player and see how that goes.
+* ~~fix bug: throwables block movement
+* ~~create tumblr page
+	* motivation: I want to be able to easily share and get feedback on the creative direction of the game. I want to see if other people see the humor, find the ideas interesting, perceive it the way I want them to. I need to get practice with sharing my work and building community around it.
+* refactor ActLike component
+	* design: Use polymorphic OOP to bind state and behavior directly to the component's value. Create methods that handle various events, such as:
+		* another game object is about to start moving
+		* another game object is about to stop moving
+	* motivation: in order to code the more complex behaviors I have in mind, it'd much easier to switch use polymorphism. The big nested control flow statements are already a bit tough to maintain.
+	* plan: spike for 90mins then reflect and plan out the rest.
+		* create a minimal Behavior interface
+		* refactor ActLike component to accept objects that implement Behavior interface
+		* For Player, Bro, Box, Airplane, and Wall
+			* create Behavior class while refactoring systems to use behavior object
+	* finishing up:
+		* events should include a tile range. Event handlers simply filter using the tile range. By default the tile range is the range of tiles visible on screen.
+		* the spatial index in the event handlers map is probably overkill.
+* create menus using @pixi/ui
+	* design: Show the main menu when the game loads. When playing or in normal mode of the editor, user can press ESC to bring up the menu. Menu selections are always stored as URL query string parameters so they're statefully integrated with the browser.
+		* main menu:
+			* play
+			* edit
+		* edit menu
+			* select level
+	* estimate: 3hrs
+	* subtasks:
+		* create the concept of "scenes" and a "scene manager"
+			* design: Before anything happens from the player's perspective, the scene manager must be told what scene to run. A scene knows how to start itself, how to update itself on each frame, and how to dispose of itself to make way for the next scene. The scene / scene manager will subsume the task switcher system and the existing overlay code.
+		* figure out how to create sprites/display objects for the menu. Should each element in the menu be its own sprite? If so, then it's properties could be determined by its entity's components. These entities could be added by the scene when it's constructed. Maybe each scene should have a record called "entities" as a field that maps names to entity ids. 
+* fix the crash that happens whenever the code is changed such that saved/loaded components that refer to other entities no longer point to the entities they should point to.
+	* design: instead of saving the actual entityId, it should save an offset from the highest entityId that existed before loading.
+* create title screen
+	* design: title screen is displayed when the game loads. Upon input, the main menu is displayed with whatever artistic slight-of-hand that looks good
+* create UI chrome for showing inventory
+* change/reset level
+* work on new sprites
+* speech bubbles for hints/tutorial
 # sprint 12/13/23
 From now on I'll actually start a new sprint each week. Had the playtest at the MADE this past weekend. Got a lot of good feedback and found a lot of bugs.
-* take a new screencap of the game in its current state, for posterity.
+* ~~take a new screencap of the game in its current state, for posterity.
 	* estimate: 15 minutes
-* bug: it's possible to place walls on top of player in the editor
-* bug: something weird happens when zombies collide with unzombies
-* bug: somehow zombies can end up on top of crates
+* ~~bug: it's possible to place walls on top of player in the editor
+* ~~bug: something weird happens when zombies collide with unzombies
+* ~~bug: somehow zombies can end up on top of crates
+* ~~bug: undo after throwing potion first move causes crash
 * ~~bug: throwing a potion doesn't take a turn~~
 * improvement: redesign the player character
 	* the guy in a suit just isn't the most inspiring hero. I'm leaning towards having it be a girl who's father works in the facility. She's looking for her father who is probably one of the zombies.
-* improvement: try having zombies only stop you when they overlap your player.
+* ~~improvement: try having zombies only stop you when they overlap your player.
 	* depends on: redesigning the player character
 	* motivation: it might make it easier to design puzzles
 	* design: use a feature flag to decide to apply this rule. Create an large scale illustration (or even an animation) of the player fighting the zombie to show in the the overlay. 
+* ~~improvement: change something so it doesn't seem like you're eating unzombies when you move over them
+	* design: show a cutscene? have the unzombie give you some helpful intel?
 * ~~Improvement: editor C keybind
 	* ~~motivation: B is more intuitive since B can stand for Box or Block. Box is a more common, general word for what the sprite looks like, and Block is a common word used in this genre of game. People at the play test didn't immediately pick up that C stands for Crate. Also Crate sorta sounds like Create, which could be confusing spoken aloud.
 	* ~~estimate: 2 minutes 
@@ -19,12 +118,16 @@ From now on I'll actually start a new sprint each week. Had the playtest at the 
 	* ~~motivation: since changing the editor movement keys to WASD, now the save level keybind (Shift+W) causes the cursor to move up.
 	* ~~design: just detect if the shift key is being pressed and don't move the cursor if it is.
 	* ~~estimate: 5 minutes
-* improvement: simplify undo apparatus (break into smaller chunks)
+* ~~improvement: simplify undo apparatus (break into smaller chunks)
 	* design/motivation: Every entity that can have its state undone has a shadow entity that, when an undo is requested, receives the state for that entity from the top of the undo stack. There are then re-entrant delta-time functions that transition the value of each component on the original entity to the value of said component on the shadow entity. This way we don't have to use velocity or the physics system to undo position, and other components can be added to the undo apparatus in a standardized way. Add an undo system that will query for undo components. (This doesn't actually have to be a component since only the undo system will access this info.) The undo components point to the shadow entity. The system then simply applies the transition function for each component, if necessary. All of the management of the undo stack can also be moved to this system. It can simply expose an API that the game system can use in keybinds. That API:
-		* requestUndo(): try to pop state as long as the internal stack is > 0 depth and we're not still in the process of handling an earlier request. Apply the state using the shadow entity and transition functions described above.
-		* pushUndoState(): push the state of all undo-able entities on the internal stack.
-		* enableUndo(id: number): adds the undo component and creates the shadow entity for entity given by `id`.
+		* popUndo(ids): pop state from the stack and apply it to the shadow entities (throw an error if the stack is empty)
+		* pushUndo(ids): push the state of all undo-able entities onto the stack.
 	* estimate: 5 hours to get to where everything in the game can be undone.
+	* questions: what if the entity has a non-zero velocity? leave its velocity alone, keep it's displacement limit at zero? how will the system remember the original difference between component A of the shadow entity and component A of the undo entity in order to perform linear interpolation?ja
+	* subtasks:
+		* ~~remove existing undo code
+		* implement enableUndo function
+		* implement pushUndo function
 * improvement: animate velocity (break into smaller chunks)
 	* motivation: will look better and make it easier to tell what's going on, and smooth camera movements might be more comfortable for players.
 	* design: Since there's no friction (to allow for projectiles) yet all movement is quantized, there has to be a way of limiting movement due to velocity. The physics system maintains an internal record per-entity record of A.) the per-turn movement limit, in tiles (neglecting difference between X and Y) and B.) how much it's moved in the current turn. With this in place, it should be possible to move entities smoothly using their velocity and the delta time. Will need to make sure to update the tile-based spatial partition only once an entity is fully inside a tile, otherwise, the physics system in its current form will think the entity is colliding with itself. Maybe instead I just make the physics system smarter?

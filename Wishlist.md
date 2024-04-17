@@ -12,7 +12,7 @@ smaller chair / couch / love seat?
 mason jars
 bath robe
 cat breath fresheners
-hot/cold pack
+sticky notes
 
 
 
